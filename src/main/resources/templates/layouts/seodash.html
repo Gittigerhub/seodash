@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout"
+>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SeoDash Free Bootstrap Admin Template by Adminmart</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/seodashlogo.png" />
+  <link rel="stylesheet" href="assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+
+    <!-- 사이드바(서브메뉴) 시작 -->
+    <aside th:replace="~{fragments/aside::sidebar}" class="left-sidebar"></aside>
+    <!--  사이드바 끝 -->
+
+    <!-- 본문 시작 -->
+    <div class="body-wrapper">
+
+      <!--  회원 정보 -->
+      <header th:replace="~{fragments/header::header}" class="app-header"></header>
+
+      <!--  본문 내용(저작권 뗄 수 없게 붙어있음) -->
+      <div layout:fragment="content" class="container-fluid"></div>
+
+    </div> <!-- 본문 끝 -->
+
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
